@@ -1,0 +1,24 @@
+  .main-style{
+            text-align: center;
+            font-family: "Cormorant Garamond", serif;
+            background: linear-gradient(to right, rgb(254, 254, 172), rgb(224, 171, 206)) ;
+        }
+
+        
+        div{
+            border:2px solid rgb(193, 94, 150) ;
+            margin: 15px 20px;
+            padding: 10px 25px 12px;
+            background-color: rgba(223, 179, 215, 0.96);
+            box-shadow: 10px 8px pink;
+        }
+
+        h3{
+            text-shadow: 5px 3px grey;
+        }
+
+        #user{
+            width: 13%;
+            float: left;
+            border-radius: 50%;
+        }
