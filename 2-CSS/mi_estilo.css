@@ -1,0 +1,20 @@
+img {
+    width: 100%;
+    display: block;
+}
+
+.galeria {
+    column-gap: 10px;
+}
+
+@media (max-width: 600px) {
+    .galeria {
+        column-count: 1;
+    }
+}
+
+@media (min-width: 601px) {
+    .galeria {
+        column-count: 3;
+    }
+}

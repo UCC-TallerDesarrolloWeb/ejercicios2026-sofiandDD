@@ -4,19 +4,52 @@
         <title>Catalogo de productos</title>
         <link href="catalogo.css" type="text/css" rel="stylesheet">
     </head>
-    <body>
-        <main>
+    <body class="grid-container">
+        <header class="item1">
+            catalogo de productos
+        </header>
+
+       <nav class="item2">lista de navegacion
+    <a href="productos.html">Productos</a>
+    <a href="#">Catálogo</a>
+    <a href="#">Carrito de Compras</a>
+</nav>
+
+        <aside class="item3">
+            <fieldset>
+                <legend>buscar</legend>
+                <label for="search">buscar</label>
+                <input type="text" name="search" id="search" placeholder="buscar..">
+            </fieldset>
+            <fieldset>
+                <legend>precios</legend>
+                <p>
+                <label for="price-min">minimo</label>
+                <input type="number" name="price-min" id="price-min" min="0"></p>
+               <p>
+                <label for="price-max">maximo</label>
+                <input type="number" name="price-max" id="price-max" min="0"></p>
+            </fieldset>
+            <fieldset>
+                <legend>tipo de productos</legend>
+                <label><input type="checkbox" name="categoria" value="Protectores"> Protectores</label>
+                <label><input type="checkbox" name="categoria" value="Dobok"> Dobok</label>
+                <label><input type="checkbox" name="categoria" value="Entrenamiento"> Entrenamiento</label>
+            </fieldset>
+        </aside>
+
+        <main class="item4">
             <div>
                 <img src="https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/cabezal-cerrado.webp" alt="cabezal cerrado">
                 <h3>cabezal cerrado</h3>
             </div>
 
-                 <div>
+            <div>
                 <img src="https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/dobok.webp" alt="dobok">
                 <h3>dobok</h3>
             </div>
 
-             <div>
+            <div>
                 <img src="https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/escudo-potencia.webp" alt="escudo potencia">
                 <h3>escudo potencia</h3>
             </div>
@@ -27,20 +60,18 @@
             </div>
 
             <div>
-                <img src="https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/foco-con-dedos.webp" alt="foco-con-dedos.webp">
-                <h3>foco con dedos</h3>
-            </div>
-
-              <div>
                 <img src="https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/protectores-manos.webp" alt="protectores manos">
                 <h3>protectores manos</h3>
             </div>
 
-              <div>
-                <img src="https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/protectores-manos.webp" alt="protectores-manos">
-                <h3>protectores-manos</h3>
+            <div>
+                <img src="https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/protectores-manos.webp" alt="protectores manos">
+                <h3>protectores manos</h3>
             </div>
-       
         </main>
+
+        <footer class="item5">
+            © 2026 Catálogo de productos
+        </footer>
     </body>
 </html>
