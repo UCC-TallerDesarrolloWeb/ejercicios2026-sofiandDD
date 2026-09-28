@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito de Compras</title>
+    <link href="catalogo.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="../3-Js/tienda.js"></script>
+</head>
+<body class="grid-container" onload="iniciarCarrito()">
+    <header class="item1">
+        catalogo de productos
+    </header>
+
+    <nav class="item2">lista de navegacion
+        <a href="productos.html">Productos</a>
+        <a href="carrito.html">Carrito de Compras (<span id="contadorCarrito">0</span>)</a>
+    </nav>
+
+    <aside class="item3">
+        <button type="button" onclick="vaciarCarrito()">Vaciar Carrito</button>
+    </aside>
+
+    <main class="item4">
+        <div id="listaCarrito">
+        </div>
+        <h3>Total a pagar: <span id="totalCarrito">$0</span></h3>
+    </main>
+
+    <footer class="item5">
+         2026 Catálogo de productos
+    </footer>
+</body>
+</html>

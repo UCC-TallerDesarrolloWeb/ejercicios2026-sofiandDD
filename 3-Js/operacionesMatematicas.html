@@ -13,32 +13,28 @@
     <h1>Operaciones Matemáticas</h1>
     <form class="operacionesMat">
         <p>
-            <input id="nums1" type="text" name="sum_num1">
+            <input id="nums1" type="text" name="sum_num1" onchange="sumar()">
             +
-            <input id="nums2" type="text" name="sum_num2">
-            =
-            <input id="totalS" type="text" name="sum_total">
+            <input id="nums2" type="text" name="sum_num2" onchange="sumar()">
+            = <span id="totalS"></span>
         </p>
         <p>
-            <input id="numr1" type="text" name="res_num1">
+            <input id="numr1" type="text" name="res_num1" onchange="restar()">
             -
-            <input id="numr2" type="text" name="res_num2">
-            =
-            <input id="totalR" type="text" name="res_total">
+            <input id="numr2" type="text" name="res_num2" onchange="restar()">
+            = <span id="totalR"></span>
         </p>
         <p>
-            <input id="numm1" type="text" name="mul_num1">
+            <input id="numm1" type="text" name="mul_num1" onchange="multiplicar()">
             x
-            <input id="numm2" type="text" name="mul_num2">
-            =
-            <input id="totalM" type="text" name="mul_total">
+            <input id="numm2" type="text" name="mul_num2" onchange="multiplicar()">
+            = <span id="totalM"></span>
         </p>
         <p>
-            <input id="numd1" type="text" name="div_num1">
+            <input id="numd1" type="text" name="div_num1" onchange="dividir()">
             /
-            <input id="numd2" type="text" name="div_num2">
-            =
-            <input id="totalD" type="text" name="div_total">
+            <input id="numd2" type="text" name="div_num2" onchange="dividir()">
+            = <span id="totalD"></span>
         </p>
     </form>
 </div>

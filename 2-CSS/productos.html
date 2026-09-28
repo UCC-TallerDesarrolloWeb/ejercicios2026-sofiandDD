@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catalogo de productos</title>
+    <link href="catalogo.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="../3-Js/tienda.js"></script>
+</head>
+<body class="grid-container" onload="iniciarCatalogo()">
+    <header class="item1">
+        catalogo de productos
+    </header>
+
+    <nav class="item2">lista de navegacion
+        <a href="productos.html">Productos</a>
+        <a href="carrito.html">Carrito de Compras (<span id="contadorCarrito">0</span>)</a>
+    </nav>
+
+    <aside class="item3">
+        <fieldset>
+            <legend>buscar</legend>
+            <label for="search">buscar</label>
+            <input type="text" name="search" id="search" placeholder="buscar.." oninput="aplicarFiltros()">
+        </fieldset>
+        <fieldset>
+            <legend>precios</legend>
+            <p>
+            <label for="price-min">minimo</label>
+            <input type="number" name="price-min" id="price-min" min="0" onchange="aplicarFiltros()"></p>
+           <p>
+            <label for="price-max">maximo</label>
+            <input type="number" name="price-max" id="price-max" min="0" onchange="aplicarFiltros()"></p>
+        </fieldset>
+        <fieldset>
+            <legend>marca</legend>
+            <select id="marca" onchange="aplicarFiltros()">
+                <option value="">Todas</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>tipo de productos</legend>
+            <label><input type="checkbox" name="categoria" value="Protectores" onchange="aplicarFiltros()"> Protectores</label>
+            <label><input type="checkbox" name="categoria" value="Dobok" onchange="aplicarFiltros()"> Dobok</label>
+            <label><input type="checkbox" name="categoria" value="Entrenamiento" onchange="aplicarFiltros()"> Entrenamiento</label>
+        </fieldset>
+        <fieldset>
+            <legend>ordenar</legend>
+            <select id="orden" onchange="aplicarFiltros()">
+                <option value="">Sin ordenar</option>
+                <option value="precio-asc">Precio: menor a mayor</option>
+                <option value="precio-desc">Precio: mayor a menor</option>
+                <option value="nombre-az">Nombre: A-Z</option>
+                <option value="nombre-za">Nombre: Z-A</option>
+            </select>
+        </fieldset>
+    </aside>
+
+    <main class="item4">
+        <!-- Las tarjetas de producto se generan dinámicamente con JS -->
+    </main>
+
+    <footer class="item5">
+        © 2026 Catálogo de productos
+    </footer>
+
+    <div id="modal">
+    <div id="modalContenido"></div>
+    <button type="button" onclick="cerrarModal()">Cerrar</button>
+</div>
+</body>
+</html>
