@@ -2,16 +2,40 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Ejercicio Propiedades Tipográficas</title>
-</head>
-<body style="font-family: Arial, Helvetica, sans-serif;">
+    <title>Ejercicio Columnas</title>
+     <style>
+        #tituloPrincipal{color: rgb(57,29,168);
+        }
+        .tituloNoticia{
+            font-size: 2.5em;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{ 
+            text-decoration: none;
+        }
+        a:visited, a:link{
+            color:rgb(19,74,178)
+        }
+        a:hover{
+            font-size: 30px;
+        }
 
+        article{
+            column-count: 2;
+            column-gap: 50px;
+        }
+    </style>
+</head>
+<body>
+<!--Cree los estilos CSS necesarios para que el texto se visualice en 2 columnas-->
 <header>
-    <h1 style="color: rgb(57,29,168);">Diario On-line</h1>
+    <h1 id="tituloPrincipal">Diario On-line</h1>
 </header>
 <a href="ej_leyes.html" target="_blank">Legal</a>
 <section>
-    <h3 style="font-size: 2.5em;">CordoBici</h3>
+    <h3 class="tituloNoticia">CordoBici</h3>
     Publicado el 07/03/2018 en Agropecuarias y Ambiente
     <article>
         <div>
@@ -28,7 +52,7 @@
                 interesada en implementar.
             </p>
 
-            <h5>Investigación innovadora</h5>
+            <h5 class="tituloNoticia">Investigación innovadora</h5>
 
             <p>
                 El sistema de bicicletas compartidas no es nuevo, ya funciona en muchos lugares del mundo. En nuestro país
@@ -39,12 +63,12 @@
             <p>
                 Estudiaron su procedimiento, relevaron funcionamientos, contactaron proveedores y mantuvieron contacto con
                 la Municipalidad de Córdoba para conocer el escenario en donde se implementaría el proyecto.  A partir de
-                esta información estadística diseñaron un sistema para optimizar lo que ya existe. "Lo que han hecho es
-                mejorar la propuesta, agregando un know how", explica Henry Martínez, coordinador de la carrera y director
+                esta información estadística diseñaron un sistema para optimizar lo que ya existe. “Lo que han hecho es
+                mejorar la propuesta, agregando un know how”, explica Henry Martínez, coordinador de la carrera y director
                 de la tesis.
             </p>
         </div>
-        <div>
+        <div class="grid-item">
             <p>
                 Gracias a una profunda investigación comercial, sumada a una simulación realizada por un programa llamado
                 anylogic, consiguieron localizar de manera estratégica 19 estaciones con 280 bicicletas, en Nueva Córdoba y
