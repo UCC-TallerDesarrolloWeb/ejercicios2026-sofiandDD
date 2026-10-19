@@ -6,7 +6,7 @@
  * @param {string} valor - Valor numérico ingresado por el usuario
  * @return {void} No retorna ningún valor, actualiza directamente los inputs del formulario lasUnidades
  */
-convertirUnidades = (id, valor) => {
+let convertirUnidades = (id, valor) => {
     let met, pul, pie, yar;
 
     if (valor.includes(",")) {
@@ -55,14 +55,18 @@ convertirUnidades = (id, valor) => {
  * @param {string} unidad - Id del campo que generó el cambio (grados o radianes)
  * @return {void} No retorna ningún valor, actualiza directamente el input del DOM
  */
-function cambioGrados(valor, unidad) {
+let cambioGrados = (valor, unidad) => {
+    if (valor.includes(",")) {
+        valor = valor.replace(",", ".");
+    }
+
     if (isNaN(valor)) {
         alert("Se ingreso un valor invalido en " + unidad);
         document.getElementById("grados").value = "";
         document.getElementById("radianes").value = "";
-    } else if (unidad == "grados") {
+    } else if (unidad === "grados") {
         document.getElementById("radianes").value = valor * (Math.PI / 180);
-    } else if (unidad == "radianes") {
+    } else if (unidad === "radianes") {
         document.getElementById("grados").value = valor * (180 / Math.PI);
     }
 }
@@ -87,8 +91,11 @@ let mostrarOcultarDiv = (valor) => {
  * @return {void} No retorna ningún valor, actualiza el span de resultado
  */
 let sumar = () => {
-    let num1 = Number(document.getElementById("nums1").value);
-    let num2 = Number(document.getElementById("nums2").value);
+    let val1 = document.getElementById("nums1").value;
+    let val2 = document.getElementById("nums2").value;
+    if (val1 === "" || val2 === "") return;
+    let num1 = Number(val1);
+    let num2 = Number(val2);
     document.getElementById("totalS").innerHTML = num1 + num2;
 }
 
@@ -98,8 +105,11 @@ let sumar = () => {
  * @return {void} No retorna ningún valor, actualiza el span de resultado
  */
 let restar = () => {
-    let num1 = Number(document.getElementById("numr1").value);
-    let num2 = Number(document.getElementById("numr2").value);
+    let val1 = document.getElementById("numr1").value;
+    let val2 = document.getElementById("numr2").value;
+    if (val1 === "" || val2 === "") return;
+    let num1 = Number(val1);
+    let num2 = Number(val2);
     document.getElementById("totalR").innerHTML = num1 - num2;
 }
 
@@ -109,8 +119,11 @@ let restar = () => {
  * @return {void} No retorna ningún valor, actualiza el span de resultado
  */
 let multiplicar = () => {
-    let num1 = Number(document.getElementById("numm1").value);
-    let num2 = Number(document.getElementById("numm2").value);
+    let val1 = document.getElementById("numm1").value;
+    let val2 = document.getElementById("numm2").value;
+    if (val1 === "" || val2 === "") return;
+    let num1 = Number(val1);
+    let num2 = Number(val2);
     document.getElementById("totalM").innerHTML = num1 * num2;
 }
 
@@ -120,7 +133,10 @@ let multiplicar = () => {
  * @return {void} No retorna ningún valor, actualiza el span de resultado
  */
 let dividir = () => {
-    let num1 = Number(document.getElementById("numd1").value);
-    let num2 = Number(document.getElementById("numd2").value);
+    let val1 = document.getElementById("numd1").value;
+    let val2 = document.getElementById("numd2").value;
+    if (val1 === "" || val2 === "") return;
+    let num1 = Number(val1);
+    let num2 = Number(val2);
     document.getElementById("totalD").innerHTML = num1 / num2;
 }

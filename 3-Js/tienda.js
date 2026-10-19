@@ -11,7 +11,7 @@ const productos = [
   },
   {
     nombre: "Dobok Dan",
-    description: "Bobok aprobado para torneos internacionales.",
+    description: "Dobok aprobado para torneos internacionales.",
     categoria: "Dobok",
     marca: "Daedo",
     talle: ["1", "2", "3", "4", "5", "6", "7", "8"],
@@ -95,7 +95,7 @@ let mostrarCatalogo = (lista = productos) => {
 }
 
 /**
- * Muestra el modal con el detalle del producto seleccionado
+ * Abre el dialog con el detalle del producto seleccionado
  * @method mostrarModal
  * @param {string} nombre - Nombre del producto a mostrar
  * @return {void}
@@ -110,16 +110,16 @@ let mostrarModal = (nombre) => {
         <p><strong>Categoría:</strong> ${producto.categoria}</p>
         <p><strong>Precio:</strong> ${formatearPrecio(producto.precio)}</p>
     `;
-    document.getElementById("modal").style.display = "block";
+    document.getElementById("modal").showModal();
 }
 
 /**
- * Cierra el modal de detalle de producto
+ * Cierra el dialog de detalle de producto
  * @method cerrarModal
  * @return {void}
  */
 let cerrarModal = () => {
-    document.getElementById("modal").style.display = "none";
+    document.getElementById("modal").close();
 }
 
 /**
