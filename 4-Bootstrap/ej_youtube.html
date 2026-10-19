@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap - Youtube</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        /* Botones escondidos: sin alto y transparentes */
+        .action-buttons {
+            height: 0;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        /* Corrección de la filmina: "transition: transform", no "scale" */
+        .card {
+            transform: scale(1);
+            transition: transform 0.1s ease;
+        }
+
+        /* Pseudoclase hover: la card crece y queda por encima de las otras */
+        .card:hover {
+            transform: scale(1.1);
+            z-index: 100;
+        }
+
+        /* Con el hover aparecen los botones */
+        .card:hover .action-buttons {
+            height: auto;
+            opacity: 1;
+        }
+
+        .card img {
+            width: 35rem;
+        }
+
+        /* El avatar del canal más chiquito */
+        .col-2 img {
+            width: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+<!-- container + my-5 + d-flex + gap-1: las cards en fila con un espacito -->
+<div class="container my-5 d-flex gap-1">
+
+    <div class="card text-white text-bg-dark border-0">
+        <img src="https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/satoshito89_01.png" class="card-img-top" alt="Miniatura">
+        <div class="card-body">
+            <div class="row">
+                <!-- Avatar del canal: 2 columnas -->
+                <div class="col-2">
+                    <img src="https://i.pravatar.cc/96?img=47" class="rounded-circle" alt="Canal">
+                </div>
+                <!-- Texto: 10 columnas -->
+                <div class="col-10">
+                    <a href="#" class="text-white text-decoration-none fw-bold fs-6">Taller de Desarrollo Web - VaciarCarrito y EliminarProducto</a>
+                    <div class="text-light opacity-50">Taller de Desarrollo Web</div>
+                    <div class="text-light opacity-50">230 vistas · hace 1 día</div>
+                </div>
+            </div>
+            <!-- Botones que aparecen con el hover -->
+            <div class="row action-buttons p-2 overflow-hidden">
+                <div class="col-6 p-1">
+                    <a href="#" class="btn text-secondary w-100 fw-bold d-block fs-6">VER MÁS TARDE</a>
+                </div>
+                <div class="col-6 p-1">
+                    <a href="#" class="btn text-secondary w-100 fw-bold d-block fs-6">AGREGAR A LA LISTA</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card text-white text-bg-dark border-0">
+        <img src="https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/satoshito89_02.png" class="card-img-top" alt="Miniatura">
+        <div class="card-body">
+            <div class="row">
+                <!-- Avatar del canal: 2 columnas -->
+                <div class="col-2">
+                    <img src="https://i.pravatar.cc/96?img=47" class="rounded-circle" alt="Canal">
+                </div>
+                <!-- Texto: 10 columnas -->
+                <div class="col-10">
+                    <a href="#" class="text-white text-decoration-none fw-bold fs-6">Taller de Desarrollo Web - Otro Ejercicio</a>
+                    <div class="text-light opacity-50">Taller de Desarrollo Web</div>
+                    <div class="text-light opacity-50">1,2 k vistas · hace 3 días</div>
+                </div>
+            </div>
+            <!-- Botones que aparecen con el hover -->
+            <div class="row action-buttons p-2 overflow-hidden">
+                <div class="col-6 p-1">
+                    <a href="#" class="btn text-secondary w-100 fw-bold d-block fs-6">VER MÁS TARDE</a>
+                </div>
+                <div class="col-6 p-1">
+                    <a href="#" class="btn text-secondary w-100 fw-bold d-block fs-6">AGREGAR A LA LISTA</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card text-white text-bg-dark border-0">
+        <img src="https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/satoshito89_03.png" class="card-img-top" alt="Miniatura">
+        <div class="card-body">
+            <div class="row">
+                <!-- Avatar del canal: 2 columnas -->
+                <div class="col-2">
+                    <img src="https://i.pravatar.cc/96?img=47" class="rounded-circle" alt="Canal">
+                </div>
+                <!-- Texto: 10 columnas -->
+                <div class="col-10">
+                    <a href="#" class="text-white text-decoration-none fw-bold fs-6">Taller de Desarrollo Web - Bootstrap y Sass</a>
+                    <div class="text-light opacity-50">Taller de Desarrollo Web</div>
+                    <div class="text-light opacity-50">845 vistas · hace 1 semana</div>
+                </div>
+            </div>
+            <!-- Botones que aparecen con el hover -->
+            <div class="row action-buttons p-2 overflow-hidden">
+                <div class="col-6 p-1">
+                    <a href="#" class="btn text-secondary w-100 fw-bold d-block fs-6">VER MÁS TARDE</a>
+                </div>
+                <div class="col-6 p-1">
+                    <a href="#" class="btn text-secondary w-100 fw-bold d-block fs-6">AGREGAR A LA LISTA</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

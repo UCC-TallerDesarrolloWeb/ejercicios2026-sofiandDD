@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Timeline</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Tamaño de las fotitos de los usuarios */
+        .avatar {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- container: el "lienzo" del timeline, con borde y margen arriba -->
+<div class="container border mt-5">
+
+    <!-- Cabecera de meses: cada mes ocupa la mitad (6 de 12) -->
+    <div class="row bg-black text-white text-center fw-bold">
+        <div class="col-6">Enero</div>
+        <div class="col-6">Febrero</div>
+    </div>
+
+    <!-- Cabecera de semanas: 8 "col" iguales con borde claro -->
+    <div class="row bg-black text-white text-center">
+        <div class="col border border-light">Semana 1</div>
+        <div class="col border border-light">Semana 2</div>
+        <div class="col border border-light">Semana 3</div>
+        <div class="col border border-light">Semana 4</div>
+        <div class="col border border-light">Semana 1</div>
+        <div class="col border border-light">Semana 2</div>
+        <div class="col border border-light">Semana 3</div>
+        <div class="col border border-light">Semana 4</div>
+    </div>
+
+    <!--
+        Cada tarea: una fila con una columna vacía (col-X) que la corre a la derecha
+        y la tarjeta (col-5) con el estado, título, fecha y los usuarios.
+    -->
+    <!-- Tarea: Completada -->
+    <div class="row p-4">
+        <div class="row py-2">
+            <div class="item col-5 rounded-2 bg-secondary text-white p-2">
+                <div class="row">
+                    <div class="col-10">
+                        <div class="status fs-6 text-info">Completada</div>
+                        <div class="title fw-bold fs-5">Definir Arquitectura</div>
+                        <div class="date opacity-50 fs-6">20 Enero</div>
+                    </div>
+                    <div class="col-2 d-flex align-items-center gap-1 p-1">
+                        <img class="avatar rounded-circle border border-light" src="https://i.pravatar.cc/80?img=47" alt="Usuario">
+                        <img class="avatar rounded-circle border border-light" src="https://i.pravatar.cc/80?img=45" alt="Usuario">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tarea: En Progreso -->
+    <div class="row p-4">
+        <div class="row py-2">
+            <div class="col-3"></div>
+            <div class="item col-5 rounded-2 bg-secondary text-white p-2">
+                <div class="row">
+                    <div class="col-10">
+                        <div class="status fs-6 text-warning">En Progreso</div>
+                        <div class="title fw-bold fs-5">Definir Arquitectura</div>
+                        <div class="date opacity-50 fs-6">20 Enero</div>
+                    </div>
+                    <div class="col-2 d-flex align-items-center gap-1 p-1">
+                        <img class="avatar rounded-circle border border-light" src="https://i.pravatar.cc/80?img=47" alt="Usuario">
+                        <img class="avatar rounded-circle border border-light" src="https://i.pravatar.cc/80?img=45" alt="Usuario">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tarea: Bloqueada -->
+    <div class="row p-4">
+        <div class="row py-2">
+            <div class="col-4"></div>
+            <div class="item col-5 rounded-2 bg-secondary text-white p-2">
+                <div class="row">
+                    <div class="col-10">
+                        <div class="status fs-6 text-danger">Bloqueada</div>
+                        <div class="title fw-bold fs-5">Definir Arquitectura</div>
+                        <div class="date opacity-50 fs-6">20 Enero</div>
+                    </div>
+                    <div class="col-2 d-flex align-items-center gap-1 p-1">
+                        <img class="avatar rounded-circle border border-light" src="https://i.pravatar.cc/80?img=47" alt="Usuario">
+                        <img class="avatar rounded-circle border border-light" src="https://i.pravatar.cc/80?img=45" alt="Usuario">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
