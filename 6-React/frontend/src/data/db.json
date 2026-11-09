@@ -1,0 +1,158 @@
+{
+  "activities": [
+    {
+      "id": "1",
+      "nombre": "Taekwondo",
+      "descripcion": "Arte marcial coreana",
+      "horarios": [
+        {
+          "dia": 2,
+          "hora-inicio": "18:30",
+          "hora-fin": "20:00"
+        },
+        {
+          "dia": 4,
+          "hora-inicio": "18:30",
+          "hora-fin": "20:00"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "nombre": "Zumba",
+      "descripcion": "Ritmos latinos",
+      "horarios": [
+        {
+          "dia": 1,
+          "hora-inicio": "19:30",
+          "hora-fin": "20:30"
+        },
+        {
+          "dia": 3,
+          "hora-inicio": "19:30",
+          "hora-fin": "20:30"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "nombre": "Yoga",
+      "descripcion": "Respiración, fuerza y flexibilidad",
+      "horarios": [
+        {
+          "dia": 2,
+          "hora-inicio": "08:00",
+          "hora-fin": "09:00"
+        },
+        {
+          "dia": 5,
+          "hora-inicio": "08:00",
+          "hora-fin": "09:00"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "nombre": "Funcional",
+      "descripcion": "Entrenamiento en circuito",
+      "horarios": [
+        {
+          "dia": 1,
+          "hora-inicio": "07:00",
+          "hora-fin": "08:00"
+        },
+        {
+          "dia": 3,
+          "hora-inicio": "07:00",
+          "hora-fin": "08:00"
+        },
+        {
+          "dia": 5,
+          "hora-inicio": "07:00",
+          "hora-fin": "08:00"
+        }
+      ]
+    }
+  ],
+  "diasSemana": [
+    {
+      "id": "0",
+      "nombre": "Domingo"
+    },
+    {
+      "id": "1",
+      "nombre": "Lunes"
+    },
+    {
+      "id": "2",
+      "nombre": "Martes"
+    },
+    {
+      "id": "3",
+      "nombre": "Miércoles"
+    },
+    {
+      "id": "4",
+      "nombre": "Jueves"
+    },
+    {
+      "id": "5",
+      "nombre": "Viernes"
+    },
+    {
+      "id": "6",
+      "nombre": "Sábado"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "nombre": "Proteína Whey 1kg",
+      "categoria": "Suplementos",
+      "descripcion": "Proteína de suero sabor chocolate, 30 porciones.",
+      "precio": 38500,
+      "icono": "🥤"
+    },
+    {
+      "id": "2",
+      "nombre": "Guantes de boxeo 12oz",
+      "categoria": "Accesorios",
+      "descripcion": "Guantes de cuero sintético con cierre abrojo.",
+      "precio": 42000,
+      "icono": "🥊"
+    },
+    {
+      "id": "3",
+      "nombre": "Colchoneta de yoga",
+      "categoria": "Accesorios",
+      "descripcion": "Mat antideslizante de 6 mm con bolso.",
+      "precio": 27900,
+      "icono": "🧘"
+    },
+    {
+      "id": "4",
+      "nombre": "Botella térmica 750ml",
+      "categoria": "Accesorios",
+      "descripcion": "Acero inoxidable, mantiene el frío 24 h.",
+      "precio": 15500,
+      "icono": "🧴"
+    },
+    {
+      "id": "5",
+      "nombre": "Soga de saltar",
+      "categoria": "Entrenamiento",
+      "descripcion": "Soga con rulemanes y largo regulable.",
+      "precio": 9800,
+      "icono": "➰"
+    },
+    {
+      "id": "6",
+      "nombre": "Par de mancuernas 5kg",
+      "categoria": "Entrenamiento",
+      "descripcion": "Mancuernas recubiertas en neopreno.",
+      "precio": 33000,
+      "icono": "🏋️"
+    }
+  ],
+  "cart": []
+}

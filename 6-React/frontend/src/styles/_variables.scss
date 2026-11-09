@@ -1,0 +1,20 @@
+$primario: #6c3483;
+$secundario: #f5b041;
+$oscuro: #1b1b2f;
+$claro: #f7f5fb;
+$gris: #6b6b80;
+$radio: 10px;
+$sombra: 0 4px 14px rgba(0, 0, 0, 0.08);
+
+@mixin card {
+  background: white;
+  border-radius: $radio;
+  box-shadow: $sombra;
+  padding: 20px;
+}
+
+@mixin grilla($min: 220px) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax($min, 1fr));
+  gap: 20px;
+}

@@ -1,0 +1,65 @@
+@use 'variables' as *;
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: $claro;
+  color: $oscuro;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+h2 { color: $primario; }
+
+button {
+  background: $primario;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 0.95rem;
+
+  &:hover { opacity: 0.85; }
+
+  &.secundario {
+    background: transparent;
+    color: $primario;
+    border: 1px solid $primario;
+  }
+}
+
+.aviso {
+  color: $gris;
+  font-style: italic;
+}
+
+.card {
+  @include card;
+
+  h3 { margin-top: 0; color: $primario; }
+  .card__subtitle { color: $gris; margin-top: -8px; }
+  ul { padding-left: 18px; }
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: $oscuro;
+  color: $secundario;
+  font-size: 0.9rem;
+}

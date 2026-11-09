@@ -1,0 +1,24 @@
+/* Versión 1 del login con CSS tradicional (después se pasó a Login.scss) */
+.login {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+.login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 320px;
+  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+.login__form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.login__error {
+  color: #c0392b;
+}
