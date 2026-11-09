@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sass básico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sass básico</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Variables</a>
+            <a href="#">Mixins</a>
+        </nav>
+    </header>
+
+    <section class="tarjetas">
+        <article class="tarjeta-1">
+            <h2>Variables</h2>
+            <p>Los colores están guardados en <code>_variables.scss</code> y se reutilizan en todo el sitio.</p>
+        </article>
+        <article class="tarjeta-2">
+            <h2>Anidación</h2>
+            <p>Los estilos anidados están separados en <code>_anidacion.scss</code>.</p>
+        </article>
+        <article class="tarjeta-3">
+            <h2>Mixin</h2>
+            <p>El mixin <code>colores($fondo, $letras)</code> se usa en el header, las tarjetas y el footer.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>Taller de Desarrollo Web - Andreoli / Neme</p>
+    </footer>
+</body>
+</html>

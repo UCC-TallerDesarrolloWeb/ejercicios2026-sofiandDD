@@ -1,0 +1,73 @@
+header {
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+header nav {
+  margin-top: 10px;
+}
+header nav a {
+  margin: 0 10px;
+  color: #fdfefe;
+  text-decoration: none;
+}
+header nav a:hover {
+  color: #f5b041;
+  text-decoration: underline;
+}
+
+.tarjetas {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.tarjetas article {
+  width: 250px;
+  padding: 20px;
+  border-radius: 8px;
+}
+.tarjetas article h2 {
+  margin-top: 0;
+}
+.tarjetas article p {
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #fdfefe;
+  color: #1b1b2f;
+}
+
+header {
+  background-color: #6c3483;
+  color: #fdfefe;
+}
+
+.tarjeta-1 {
+  background-color: #f5b041;
+  color: #1b1b2f;
+}
+
+.tarjeta-2 {
+  background-color: #1b1b2f;
+  color: #fdfefe;
+}
+
+.tarjeta-3 {
+  background-color: #6c3483;
+  color: #fdfefe;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #1b1b2f;
+  color: #f5b041;
+}

@@ -1,0 +1,49 @@
+// Estilos por anidación (descendientes)
+@use "variables" as *;
+
+header {
+  padding: 20px;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+    font-size: 2.2rem;
+  }
+
+  nav {
+    margin-top: 10px;
+
+    a {
+      margin: 0 10px;
+      color: $color-claro;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-secundario;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.tarjetas {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+
+  article {
+    width: 250px;
+    padding: 20px;
+    border-radius: $radio;
+
+    h2 {
+      margin-top: 0;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+  }
+}

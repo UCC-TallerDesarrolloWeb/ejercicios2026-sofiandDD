@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f6f1e9;
+  color: #2f2f2f;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #6b705c;
+}
+
+header {
+  background: #2f2f2f;
+  padding: 15px 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  color: #f6f1e9;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+header .logo span {
+  color: #c0673f;
+}
+header nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header nav ul a {
+  color: #f6f1e9;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+header nav ul a:hover {
+  color: #d8c3a5;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 420px;
+  text-align: center;
+  background: linear-gradient(135deg, #d8c3a5, #c0673f);
+  color: white;
+}
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+.hero .boton {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 28px;
+  background: #2f2f2f;
+  color: #f6f1e9;
+  text-decoration: none;
+  border-radius: 30px;
+}
+.hero .boton:hover {
+  background: #6b705c;
+}
+
+.servicios {
+  padding: 50px 0;
+}
+.servicios .grilla {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.servicios article {
+  background: white;
+  padding: 25px;
+  border-top: 4px solid #c0673f;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(47, 47, 47, 0.1);
+}
+.servicios article h3 {
+  color: #c0673f;
+  margin-top: 0;
+}
+
+.proyectos {
+  padding: 50px 0;
+  background: #d8c3a5;
+}
+.proyectos .galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.proyectos .item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.proyectos .living {
+  background: #6b705c;
+}
+.proyectos .cocina {
+  background: #c0673f;
+}
+.proyectos .dormitorio {
+  background: #a8865a;
+}
+.proyectos .oficina {
+  background: #2f2f2f;
+}
+
+footer {
+  background: #2f2f2f;
+  color: #d8c3a5;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  header nav ul {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero {
+    min-height: 320px;
+    padding: 20px;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .servicios .grilla {
+    grid-template-columns: 1fr;
+  }
+  .proyectos .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .proyectos .galeria .item {
+    height: 140px;
+  }
+}

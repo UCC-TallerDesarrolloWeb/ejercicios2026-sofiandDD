@@ -1,0 +1,43 @@
+// Estilos para pantallas chicas (celular)
+// Se definen dentro de un mixin para incluirlos al FINAL de styles.scss
+@mixin estilos {
+@media (max-width: 768px) {
+  header {
+    .container {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    nav ul {
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .hero {
+    min-height: 320px;
+    padding: 20px;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .servicios .grilla {
+    grid-template-columns: 1fr;
+  }
+
+  .proyectos .galeria {
+    grid-template-columns: repeat(2, 1fr);
+
+    .item {
+      height: 140px;
+    }
+  }
+}
+}
