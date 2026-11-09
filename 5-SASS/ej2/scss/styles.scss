@@ -1,0 +1,178 @@
+// Estilos mobile separados en _mobile.scss
+@use "mobile";
+
+// ===== Variables =====
+$crema: #f6f1e9;
+$arena: #d8c3a5;
+$terracota: #c0673f;
+$oliva: #6b705c;
+$carbon: #2f2f2f;
+$fuente: "Segoe UI", Arial, sans-serif;
+$ancho-max: 1100px;
+
+// ===== Mixins =====
+@mixin flex-centro($direccion: row) {
+  display: flex;
+  flex-direction: $direccion;
+  align-items: center;
+  justify-content: center;
+}
+
+// ===== Estilos generales (desktop) =====
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $fuente;
+  background: $crema;
+  color: $carbon;
+}
+
+.container {
+  max-width: $ancho-max;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: $oliva;
+}
+
+// Header
+header {
+  background: $carbon;
+  padding: 15px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    color: $crema;
+    font-size: 1.6rem;
+    font-weight: bold;
+
+    span {
+      color: $terracota;
+    }
+  }
+
+  nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    a {
+      color: $crema;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+
+      &:hover {
+        color: $arena;
+      }
+    }
+  }
+}
+
+// Hero
+.hero {
+  @include flex-centro(column);
+  min-height: 420px;
+  text-align: center;
+  background: linear-gradient(135deg, $arena, $terracota);
+  color: white;
+
+  h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .boton {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 28px;
+    background: $carbon;
+    color: $crema;
+    text-decoration: none;
+    border-radius: 30px;
+
+    &:hover {
+      background: $oliva;
+    }
+  }
+}
+
+// Servicios
+.servicios {
+  padding: 50px 0;
+
+  .grilla {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  article {
+    background: white;
+    padding: 25px;
+    border-top: 4px solid $terracota;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba($carbon, 0.1);
+
+    h3 {
+      color: $terracota;
+      margin-top: 0;
+    }
+  }
+}
+
+// Proyectos
+.proyectos {
+  padding: 50px 0;
+  background: $arena;
+
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+
+  .item {
+    @include flex-centro;
+    height: 200px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .living { background: $oliva; }
+  .cocina { background: $terracota; }
+  .dormitorio { background: #a8865a; }
+  .oficina { background: $carbon; }
+}
+
+// Footer
+footer {
+  background: $carbon;
+  color: $arena;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+// ===== Estilos mobile (van al final para pisar los de desktop) =====
+@include mobile.estilos;

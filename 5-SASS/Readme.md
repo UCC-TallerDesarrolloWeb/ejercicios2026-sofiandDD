@@ -16,3 +16,18 @@
 3. Ejecutamos sass --watch scss/styles.scss css/styles.css
 4. Agregamos los estilos para desktop
 5. Creamos un archivo _mobile.scss y agregamos los estilos mobile
+
+---
+
+### Cómo correrlo
+
+```bash
+npm install -g sass
+# Ej 1
+cd 5-SASS/ej1
+sass --watch styles.scss styles.css
+# Ej 2
+cd 5-SASS/ej2
+sass --watch scss/styles.scss css/styles.css
+```
+Después abrir el `index.html` con Live Server.

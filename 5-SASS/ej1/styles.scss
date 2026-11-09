@@ -1,0 +1,37 @@
+// Archivo principal: importa variables, anidación y define el mixin
+@use "variables" as *;
+@use "anidacion";
+
+// Mixin que recibe color de fondo y color de letras
+@mixin colores($fondo, $letras) {
+  background-color: $fondo;
+  color: $letras;
+}
+
+body {
+  margin: 0;
+  font-family: $fuente-base;
+  @include colores($color-claro, $color-oscuro);
+}
+
+header {
+  @include colores($color-primario, $color-claro);
+}
+
+.tarjeta-1 {
+  @include colores($color-secundario, $color-oscuro);
+}
+
+.tarjeta-2 {
+  @include colores($color-oscuro, $color-claro);
+}
+
+.tarjeta-3 {
+  @include colores($color-primario, $color-claro);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  @include colores($color-oscuro, $color-secundario);
+}
