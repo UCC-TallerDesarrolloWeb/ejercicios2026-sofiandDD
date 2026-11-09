@@ -1,0 +1,53 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "nombre": "Proteína Whey 1kg",
+      "categoria": "Suplementos",
+      "descripcion": "Proteína de suero sabor chocolate, 30 porciones.",
+      "precio": 38500,
+      "icono": "🥤"
+    },
+    {
+      "id": "2",
+      "nombre": "Guantes de boxeo 12oz",
+      "categoria": "Accesorios",
+      "descripcion": "Guantes de cuero sintético con cierre abrojo.",
+      "precio": 42000,
+      "icono": "🥊"
+    },
+    {
+      "id": "3",
+      "nombre": "Colchoneta de yoga",
+      "categoria": "Accesorios",
+      "descripcion": "Mat antideslizante de 6 mm con bolso.",
+      "precio": 27900,
+      "icono": "🧘"
+    },
+    {
+      "id": "4",
+      "nombre": "Botella térmica 750ml",
+      "categoria": "Accesorios",
+      "descripcion": "Acero inoxidable, mantiene el frío 24 h.",
+      "precio": 15500,
+      "icono": "🧴"
+    },
+    {
+      "id": "5",
+      "nombre": "Soga de saltar",
+      "categoria": "Entrenamiento",
+      "descripcion": "Soga con rulemanes y largo regulable.",
+      "precio": 9800,
+      "icono": "➰"
+    },
+    {
+      "id": "6",
+      "nombre": "Par de mancuernas 5kg",
+      "categoria": "Entrenamiento",
+      "descripcion": "Mancuernas recubiertas en neopreno.",
+      "precio": 33000,
+      "icono": "🏋️"
+    }
+  ],
+  "cart": []
+}

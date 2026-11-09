@@ -1,0 +1,28 @@
+@use 'variables' as *;
+
+.login {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+
+  &__form {
+    @include card;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 320px;
+
+    h2 { margin-top: 0; text-align: center; }
+
+    input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      &:focus { outline: 2px solid $primario; }
+    }
+
+    button { margin-top: 10px; }
+  }
+
+  &__error { color: #c0392b; margin: 0; }
+}

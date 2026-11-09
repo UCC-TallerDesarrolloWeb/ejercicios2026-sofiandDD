@@ -46,3 +46,13 @@ npm run dev
 6. Crear función **formatPrice** en **src/utils**
 7. Modificar la tienda para que el boton de agregar al carrito solo esté disponible cuando el usuario inicio sesión.
 8. Modificar el código para que en lugar de leer los datos del **js** se realice un **fetch**
+---
+
+### Resolución
+El código de esta unidad está dentro del proyecto de React: [`6-React/frontend`](../6-React/frontend)
+(fetch a json-server en `src/api/api.js`, Pokémon en `src/pages/Poke.jsx`, tienda y carrito en `src/pages/Store.jsx` y `src/pages/Cart.jsx`).
+
+**Análisis de PokeAPI** (`GET https://pokeapi.co/api/v2/pokemon/1`): devuelve un JSON con los datos de Bulbasaur:
+`id`, `name`, `height` y `weight`, `types` (planta / veneno), `abilities`, `stats` (hp, ataque, defensa, etc.),
+`moves` (lista larga de movimientos) y `sprites` (URLs de imágenes, usamos `sprites.front_default`).
+En Postman el GET devuelve `200 OK` con el mismo JSON que en el navegador.

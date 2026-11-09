@@ -1,0 +1,5 @@
+@use 'variables' as *;
+
+.activities__grid {
+  @include grilla(240px);
+}

@@ -1,0 +1,28 @@
+@use 'variables' as *;
+
+.poke {
+  &__grid { @include grilla(150px); }
+}
+
+.poke-card {
+  @include card;
+  text-align: center;
+  padding: 10px;
+
+  img { width: 96px; height: 96px; }
+  h3 { margin: 4px 0; text-transform: capitalize; }
+
+  &__id { color: $gris; font-size: 0.85rem; }
+
+  &__types {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    span {
+      background: $secundario;
+      border-radius: 12px;
+      padding: 2px 8px;
+      font-size: 0.75rem;
+    }
+  }
+}
